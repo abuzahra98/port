@@ -34,7 +34,7 @@
                             <li><img src="/css3.svg" title="CSS3" alt="program_img">
                             </li>
                             <li><img src="/javascript.svg" title="Javascript" alt="program_img"></li>
-                            <li><img src="react.svg" title="React JS" alt="program_img"></li>
+                            <li><img src="/react.svg" title="React JS" alt="program_img"></li>
                             <li><img src="/tailwind.svg" title="Tailwind CSS" alt="program_img"></li>
                             <li><img src="/scss.svg" title="Sass/Scss" alt="program_img"></li>
                         </ul>
