@@ -158,11 +158,22 @@
 }
 
 @media (max-width: 500px) {
-    .main-container{
+    .main__container{
         padding: 0 !important;
     }
+
+    .hero-img {
+    
+    height: 17rem;
+  
+    width: 17rem;
+}
+.list {
+    display: none;
+}
 }
 @media (max-width: 900px) {
+    
     .hero-main {
         flex-direction: column-reverse;
         gap: 0;
