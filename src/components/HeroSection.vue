@@ -11,11 +11,11 @@
                             in Amman, Jorden. 📍
                         </p>
                         <div class="any">
-                            <a aria-label="linkedin" rel="noreferrer" target="_blank"
-                                href="https://github.com/abuzahra98">
-                              <img class="hero-icon" src="/GitHub.png" alt="">
+                            <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://github.com/abuzahra98">
+                                <img class="hero-icon" src="/GitHub.png" alt="">
                             </a>
-                            <a aria-label="github" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/dawood-abuzahra/">
+                            <a aria-label="github" rel="noreferrer" target="_blank"
+                                href="https://www.linkedin.com/in/dawood-abuzahra/">
                                 <img class="hero-icon" src="/linkedin.png" alt="">
                             </a>
                         </div>
@@ -46,17 +46,18 @@
 </template>
 
 <style lang="scss">
-
 .any {
     cursor: pointer;
     display: flex;
     gap: 1.3rem;
     margin: 2.5rem 0;
 }
+
 .hero-icon {
     width: 3rem;
     margin-inline-end: 1rem;
 }
+
 .content {
     margin-top: 5rem;
     align-items: center;
@@ -66,10 +67,13 @@
     justify-content: center;
     position: relative;
 }
-@media (min-width: 1900px)
-{.content {
-    margin-top: 10rem;
-}}
+
+@media (min-width: 1900px) {
+    .content {
+        margin-top: 10rem;
+    }
+}
+
 .hero {
     background-color: #f9f9f9;
     display: flex;
@@ -156,7 +160,64 @@
 @media (max-width: 900px) {
     .hero-main {
         flex-direction: column-reverse;
+        gap: 0;
     }
+
+    .content {
+        height: auto;
+        margin-top: 0;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero__wave {
+        right: 1rem;
+        top: 5.4rem;
+    }
+    .any{
+        gap: 0;
+        justify-content: center;
+        margin: 1.5rem;
+    }
+
+ 
+    .hero {
+    height: auto;
+    padding: 11rem 0;
+}
+
+.skills {
+    flex-direction: column;
+    position: static;
+    bottom: -10rem !important;
+    gap: 40px;
+}
+
+.content {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+}
+
+.skills p {
+    border-bottom: 2px solid rgba(45,46,50,.5);
+    border-right: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .skills ul {
+    justify-content: center;
+    gap: 1rem !important;
+}
+
+.skills ul li {
+    width: 3.4rem !important;
+    height: 3.4rem !important;
+}
 }
 
 .skills {
