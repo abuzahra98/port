@@ -58,7 +58,7 @@
     margin-inline-end: 1rem;
 }
 .content {
-    margin-top: 10rem;
+    margin-top: 5rem;
     align-items: center;
     display: flex;
     gap: 10rem;
@@ -66,7 +66,10 @@
     justify-content: center;
     position: relative;
 }
-
+@media (min-width: 1900px)
+{.content {
+    margin-top: 10rem;
+}}
 .hero {
     background-color: #f9f9f9;
     display: flex;
