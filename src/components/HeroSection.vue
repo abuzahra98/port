@@ -150,7 +150,7 @@
 
 }
 
-@media (max-width: 1053px) {
+@media (max-width: 900px) {
     .hero-main {
         flex-direction: column-reverse;
     }
