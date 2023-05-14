@@ -1,60 +1,120 @@
 <template>
-    <div class="main__container">
-        <div class="hero-main">
-            <div class="hero-text">
-                <h1>Front-End Developer</h1>
-                <img src="/waving.png" alt="waving_hand" />
-                <p>
-                    Hi, I'm Stefan Topalovic. A passionate Front-end React Developer based
-                    in Belgrade, Serbia. 📍
-                </p>
-                <span>
-                    <a aria-label="linkedin" rel="noreferrer" target="_blank"
-                        href="https://www.linkedin.com/in/stefan-topalovic-dev/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/stefvndev">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </span>
-            </div>
-            <div class="hero-img">
- 
+    <div class="hero" id="home">
+        <div class="main__container">
+            <div class=" content">
+                <div class="hero-main">
+                    <div class="hero-text">
+                        <h1>Front-End Web Developer</h1>
+                        <img class="hero__wave" src="/waving.png" alt="waving_hand" />
+                        <p>
+                            Hi, I'm Dawood Abuzahra. A passionate Front-end Web Developer based
+                            in Amman, Jorden. 📍
+                        </p>
+                        <div class="any">
+                            <a aria-label="linkedin" rel="noreferrer" target="_blank"
+                                href="https://github.com/abuzahra98">
+                              <img class="hero-icon" src="/GitHub.png" alt="">
+                            </a>
+                            <a aria-label="github" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/dawood-abuzahra/">
+                                <img class="hero-icon" src="/linkedin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <p>Tech Stack</p>
+                    <div class="logos">
+                        <ul>
+                            <li><img src="/html.svg" title="HTML5" alt="program_img">
+                            </li>
+                            <li><img src="/css3.svg" title="CSS3" alt="program_img">
+                            </li>
+                            <li><img src="/javascript.svg" title="Javascript" alt="program_img"></li>
+                            <li><img src="react.svg" title="React JS" alt="program_img"></li>
+                            <li><img src="/tailwind.svg" title="Tailwind CSS" alt="program_img"></li>
+                            <li><img src="/scss.svg" title="Sass/Scss" alt="program_img"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss">
+
+.any {
+    cursor: pointer;
+    display: flex;
+    gap: 1.3rem;
+    margin: 2.5rem 0;
+}
+.hero-icon {
+    width: 3rem;
+    margin-inline-end: 1rem;
+}
+.content {
+    margin-top: 10rem;
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    height: 35rem;
+    justify-content: center;
+    position: relative;
+}
+
+.hero {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
 .hero-text h1 {
     color: #2d2e32;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.2;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 .hero-text {
     display: flex;
     flex-direction: column;
-    max-width: 35rem;
+    max-width: 27rem;
     position: relative;
- }
+}
 
- .hero-text img {
+.hero__wave {
     position: absolute;
-    right: 12rem;
-    top: 7.4rem;
+    right: 6rem;
+    top: 6.4rem;
     width: 4rem;
 }
-.hero-main {
-    max-width: 107rem;
-    padding: 0 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .hero-img {
+.hero-main {
+    align-items: center;
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-text p {
+    color: #767676;
+    font-family: Mulish, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.hero-img {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
     background-image: url(/dawood.jpg);
@@ -68,27 +128,75 @@
     transition: all 1s ease-in-out;
     width: 22rem;
 }
+
 @keyframes morph {
     0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 
     50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
 
     100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-  }
- 
-  .main__container {
-    
-    height: 25rem;
-    margin-top: 14rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
 
-  }
+.main__container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+
+}
+
+@media (max-width: 1053px) {
+    .hero-main {
+        flex-direction: column-reverse;
+    }
+}
+
+.skills {
+    align-items: center;
+    bottom: 0;
+    color: #767676;
+    display: flex;
+    font-size: 1.7rem;
+    left: 0;
+    position: absolute;
+}
+
+.skills p {
+    border-right: 2px solid rgba(45, 46, 50, .5);
+    color: #2d2e32;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    margin-right: 3rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.skills ul li {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    cursor: pointer;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+}
+
+.skills ul li img {
+    height: auto;
+    width: 2rem;
+}
 </style>

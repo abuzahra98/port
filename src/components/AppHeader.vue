@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main__container-header">
          <div class="container__nav">
           <div class="name-item">
             Dawood.dev
@@ -58,6 +58,11 @@
     display: block;
     font-size: 24px;
     margin: 0;
-    font-weight: 900;}
+    font-weight: 900;
+  }
+
+  .main__container-header {
+    z-index: 1;
+  }
   </style>
   
