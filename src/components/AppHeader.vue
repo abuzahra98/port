@@ -41,7 +41,7 @@
   }
   
   .list-item {
-    font-size: 17px;
+    font-size: 20px;
   
     color: #2d2e32;
     font-weight: 600;
@@ -56,7 +56,7 @@
   
   .name-item {
     display: block;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0;
     font-weight: 900;}
   </style>
