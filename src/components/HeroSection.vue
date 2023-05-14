@@ -157,6 +157,11 @@
 
 }
 
+@media (max-width: 500px) {
+    .main-container{
+        padding: 0 !important;
+    }
+}
 @media (max-width: 900px) {
     .hero-main {
         flex-direction: column-reverse;
