@@ -35,6 +35,7 @@
                             </li>
                             <li><img src="/javascript.svg" title="Javascript" alt="program_img"></li>
                             <li><img src="/react.svg" title="React JS" alt="program_img"></li>
+                            <li><img src="/vue.png" title="Vue JS" alt="program_img"></li>
                             <li><img src="/tailwind.svg" title="Tailwind CSS" alt="program_img"></li>
                             <li><img src="/scss.svg" title="Sass/Scss" alt="program_img"></li>
                         </ul>
@@ -158,22 +159,42 @@
 }
 
 @media (max-width: 500px) {
-    .main__container{
+    .main__container {
         padding: 0 !important;
     }
 
     .hero-img {
-    
-    height: 17rem;
-  
-    width: 17rem;
+
+        height: 17rem;
+
+        width: 17rem;
+    }
+
+    .list {
+        display: none;
+    }
 }
-.list {
-    display: none;
+
+@media (max-width: 400px) {
+
+    .hero-text h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .hero__wave {
+        right: 1rem !important;
+        top: 4.4rem !important;
+    }
 }
-}
+
 @media (max-width: 900px) {
-    
+    .skills {
+        left: unset !important;
+        position: absolute;
+    }
+
     .hero-main {
         flex-direction: column-reverse;
         gap: 0;
@@ -192,48 +213,49 @@
         right: 1rem;
         top: 5.4rem;
     }
-    .any{
+
+    .any {
         gap: 0;
         justify-content: center;
         margin: 1.5rem;
     }
 
- 
+
     .hero {
-    height: auto;
-    padding: 11rem 0;
-}
+        height: auto;
+        padding: 11rem 0;
+    }
 
-.skills {
-    flex-direction: column;
-    position: static;
-    bottom: -10rem !important;
-    gap: 40px;
-}
+    .skills {
+        flex-direction: column;
+        position: static;
+        bottom: -10rem !important;
+        gap: 20px;
+    }
 
-.content {
-    flex-direction: column;
-    gap: 3rem;
-    height: auto;
-    text-align: center;
-}
+    .content {
+        flex-direction: column;
+        gap: 3rem;
+        height: auto;
+        text-align: center;
+    }
 
-.skills p {
-    border-bottom: 2px solid rgba(45,46,50,.5);
-    border-right: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+    .skills p {
+        border-bottom: 2px solid rgba(45, 46, 50, .5);
+        border-right: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
-  .skills ul {
-    justify-content: center;
-    gap: 1rem !important;
-}
+    .skills ul {
+        justify-content: center;
+        gap: 1rem !important;
+    }
 
-.skills ul li {
-    width: 3.4rem !important;
-    height: 3.4rem !important;
-}
+    .skills ul li {
+        width: 3.4rem !important;
+        height: 3.4rem !important;
+    }
 }
 
 .skills {
@@ -278,5 +300,4 @@
 .skills ul li img {
     height: auto;
     width: 2rem;
-}
-</style>
+}</style>
