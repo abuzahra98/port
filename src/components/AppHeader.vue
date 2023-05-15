@@ -75,6 +75,11 @@ const toggleMenu = () => {
 }
 
  @media (max-width: 768px) {
+  .container__nav {
+
+     padding: 20px 30px 20px 30px !important;
+ 
+}
 
   .navbar-toggle {
     display: block;

@@ -62,7 +62,7 @@
     bottom: 35px;
     position: absolute;
     right: 35px;
-    width: 3rem !important;
+    width: 2rem !important;
     z-index: 3;
 }
 
@@ -144,11 +144,22 @@
 
 @media (max-width: 550px) {
     .img-side span {
-        display: none;
+        /* display: none; */
+        right: 4px;
+    height: 5rem !important;
+ 
+    width: 5rem !important;
+ 
     }
+    .img-side span img {
+ 
+    width: 5rem;
+}
 
     .work-emoji {
-        display: none;
+        /* display: none; */
+        bottom: -4px;
+    right: 28px;
     }
 
     .about__text {
