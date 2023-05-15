@@ -59,10 +59,10 @@
 }
 
 .work-emoji {
-    bottom: 35px;
+    bottom: 24px;
     position: absolute;
-    right: 35px;
-    width: 2rem !important;
+    right: 19px;
+    width: 5rem !important;
     z-index: 3;
 }
 
@@ -132,7 +132,7 @@
 
     .work-emoji {
 
-        right: 100px;
+        right: 84px;
 
     }
 
@@ -157,9 +157,9 @@
 }
 
     .work-emoji {
-        /* display: none; */
-        bottom: -4px;
-    right: 28px;
+    bottom: -9px;
+    right: 25px;
+    width: 2.5rem !important;
     }
 
     .about__text {
