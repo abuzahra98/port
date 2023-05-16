@@ -142,7 +142,7 @@ const toggleMenu = () => {
 
 .name-item {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   font-weight: 900;
 }
