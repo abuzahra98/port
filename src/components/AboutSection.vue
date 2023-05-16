@@ -96,17 +96,16 @@
 }
 
 .about-container {
+    height: 70vh;
+display: flex;
     align-items: center;
-    margin: auto;
-    margin-block: 10rem;
-    justify-content: center;
+      justify-content: center;
 }
 
 .main__container-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
-    display: flex;
+     display: flex;
     justify-content: center;
 
 }
@@ -118,6 +117,9 @@
 }
 
 @media (max-width: 900px) {
+    .about-container{
+        margin-block: 4rem;
+    }
     
     .main__container-about {
         flex-direction: column;
