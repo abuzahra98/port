@@ -10,6 +10,7 @@
           <dev><a class="list-item"  @click="toggleMenu" href="#about">About</a></dev>
           <dev><a class="list-item"  @click="toggleMenu" href="#projects">Projects</a></dev>
           <dev><a class="list-item"  @click="toggleMenu" href="#contact">Contact</a></dev>
+          <div><a class="list-item my-cv" @click="toggleMenu" href="/Resume.pdf" download>My Resume</a></div>
 
         </dev>
 
@@ -155,6 +156,10 @@ const toggleMenu = () => {
   .list {
     display: none;
   }
+}
+
+.my-cv {
+  color: rgba(255, 0, 0, 0.833);
 }
 </style>
   
