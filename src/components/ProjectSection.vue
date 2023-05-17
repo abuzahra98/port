@@ -51,7 +51,7 @@
 .project-content-header {
     color: #2d2e32;
     font-size: 25px;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     font-weight: 800;
 }
 .link {
