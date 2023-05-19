@@ -35,6 +35,39 @@
                 </div>
 
             </div>
+
+
+
+            <div class="project-container2">
+                <div class="pro__img">
+                    <a href="">
+                        <img style="" class="project__image2" src="/pro2.png" alt="">
+                    </a>
+                </div>
+                <div class="pro__text">
+                    <div class="pro-text__1">
+                        GPT-3 🚀
+
+                    </div>
+                    <div class="pro-text__2">
+                        A GPT-3 website is an online platform that allows users to rent cars for personal or business
+                        use. The website provides an interface for searching, comparing, and reserving cars.
+                    </div>
+                    <div class="stack">
+                        <p>React</p>
+                        <p>CSS</p>
+                    </div>
+                    <div class="link">
+                        <a class="any-project" target="_blank"   rel="noreferrer">Code <i
+                                class="fa-brands fa-github"></i></a>
+                        <a class="any-project" target="_blank" href="" rel="noreferrer">Live
+                            Demo<i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
     </div>
@@ -118,7 +151,18 @@
     transition: transform 10s ease-in-out;
 }
 
+.project__image2:hover {
+    transform: translateY(-73%);
+    transition: transform 10s ease-in-out;
+}
+
 .project__image {
+    transform: translateY(0%);
+    transition: transform 8s ease-in-out 0s;
+    width: 100%;
+}
+
+.project__image2 {
     transform: translateY(0%);
     transition: transform 8s ease-in-out 0s;
     width: 100%;
@@ -152,10 +196,29 @@
     height: 25rem;
     display: flex;
     gap: 5rem;
+    margin-block: 2rem;
+
+}
+
+.project-container2 {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    height: 25rem;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row-reverse;
+    margin-block: 2rem;
 
 }
 @media (max-width: 850px) {
     .project-container {
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.project-container2 {
     flex-direction: column;
     gap: 3rem;
 
@@ -175,6 +238,10 @@
 }
 
 .project-container{
+    height: 45rem;
+}
+
+.project-container2{
     height: 45rem;
 }
 .projects-grid {
